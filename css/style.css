@@ -19,15 +19,14 @@ body {
   display: flex;
 }
 
-
-.content {
-  padding: 0.5em;
+.content > * {
+  margin: 0.5em;
 }
-
-/* Necessary for right align of children */
 
 .page-header {
   width: 100%;
+  padding-bottom: 0.6em; /* Padding to space bottom border */
+  border-bottom: 2px solid #bcbbbb;/* Border acting like <hr> */
 }
 
 /* Styling for the main icon */
