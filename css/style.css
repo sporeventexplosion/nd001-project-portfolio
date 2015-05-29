@@ -17,11 +17,14 @@ body {
 
 .content {
   display: flex;
+  flex-direction: column;
+  margin: 0 0.5em;
 }
 
 .content > * {
-  margin: 0.5em;
+  margin: 0.5em 0;
 }
+
 
 .page-header {
   width: 100%;
@@ -51,7 +54,22 @@ body {
 .page-title {
   font-size: 2.5em;
 }
+
+.main-figure {
+  width: 100%;
+}
+
+.main-figure-hero {
+  width: 100%;
+  min-height: 200px;
+  background: url(/placeholder.png) center center;
+}
+
 /*No margin for headings*/
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+figure {
   margin: 0;
 }
