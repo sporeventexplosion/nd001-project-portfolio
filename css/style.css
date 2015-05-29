@@ -65,6 +65,35 @@ body {
   background: url(/placeholder.png) center center;
 }
 
+
+/*The 3 squares of different colors*/
+.color-square-container {
+  line-height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.color-squares, .color-square-captions {display: flex; }
+
+.color-square {width: 30px; height: 30px; display: inline-block; margin: 0 3px;}
+
+.color-square:nth-child(1) {
+  margin-left: 0; /*No margin on the leftmost side*/
+  background-color: #f7981d;
+}
+
+.color-square:nth-child(2) {
+  background-color: #bbbbbb;
+}
+
+.color-square:nth-child(3) {
+  background-color: #666756;
+}
+
+
+.color-square-caption {
+  margin: 0 5px;
+}
 /*No margin for headings*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
