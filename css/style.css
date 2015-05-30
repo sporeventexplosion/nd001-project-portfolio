@@ -29,7 +29,7 @@ body {
 .page-header {
   width: 100%;
   padding-bottom: 0.6em; /* Padding to space bottom border */
-  border-bottom: 2px solid #bcbbbb;/* Border acting like <hr> */
+  border-bottom: 2px solid #bcbbbb;/* Border acting as a divider */
 }
 
 /* Styling for the main icon */
@@ -57,12 +57,15 @@ body {
 
 .main-figure {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-figure-hero {
   width: 100%;
   min-height: 200px;
   background: url(/placeholder.png) center center;
+  margin-bottom: 5px;
 }
 
 
@@ -70,17 +73,25 @@ body {
 
 /*The 3 squares of different colors*/
 .color-square-container {
+  margin-top: 5px;
   line-height: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.color-squares, .color-square-captions {display: flex; }
+.color-squares, .color-square-captions {
+  display: flex;
+}
 
-.color-square {width: 30px; height: 30px; display: inline-block; margin: 0 3px;}
+
+.color-square {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 3px;
+}
 
 .color-square:nth-child(1) {
-  margin-left: 0; /*No margin on the leftmost side*/
   background-color: #f7981d;
 }
 
@@ -141,6 +152,89 @@ body {
   text-align: center;
   display: block; /*Display as block so it can be dynamically sized*/
   font-size: 0.8em;
+}
+
+
+/* Responsive design section */
+
+@media screen and (min-width: 450px) {
+  body {
+    font-size: 1.3em;
+  }
+  .color-square-container {
+    line-height: 50px;
+  }
+  .color-square {
+    width: 45px;
+    height: 45px;
+  }
+  .main-figure-hero {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1.6em;
+  }
+  .main-figure-hero {
+    min-height: 320px;
+    display: flex;
+  }
+  .featured-item {
+    width: 33.3333%;
+  }
+  .page-header {
+    border-bottom: 5px solid #bcbbbb;;
+  }
+  .featured-item-link {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .content {
+    width: 1100px;
+    margin: 1.5em auto 0 auto;
+  }
+
+  .page-header,
+  .featured-work-container {
+    width: 85%;
+    align-self: flex-end;
+  }
+
+  .main-figure {
+    justify-content: flex-end;
+  }
+  .main-figure-hero {
+    width: 85%;
+    height: 380px;
+  }
+
+  .color-square-container {
+    order: -1;
+    width: 120px;
+    flex-wrap: wrap;
+  }
+  .color-squares {
+    flex-wrap: wrap;
+  }
+  .color-square {
+    width: 70px;
+    height: 70px;
+    margin: 5px 0;
+  }
+  /*.color-squar*/
+  .color-square-captions {
+    flex-wrap: wrap;
+    font-size: 0.7em;
+    line-height: 1em;
+  }
+  .color-square-caption {
+    margin-left: -5px;
+  }
 }
 
 /*No margin for headings*/
