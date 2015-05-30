@@ -66,6 +66,8 @@ body {
 }
 
 
+
+
 /*The 3 squares of different colors*/
 .color-square-container {
   line-height: 30px;
@@ -92,8 +94,55 @@ body {
 
 
 .color-square-caption {
-  margin: 0 5px;
+  margin: 0 3px;
 }
+
+
+
+/*Featured work section*/
+
+
+.featured-work-container {
+  margin: 0 -5px; /*Negative 5 pixels so the +5 pixels in the boxes make the edges line up*/
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/*Each item featured*/
+.featured-item {
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.featured-item-title {
+  width: 100%;
+  padding-left: 10px;/*So the text is offset a little to the right*/
+  color: #bbb;
+  font-weight: 400; /*Normal font weight*/
+}
+
+.featured-item-img {
+  width: 100%;
+}
+
+.featured-item-heading {
+  color: #777;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.featured-item-link {
+  text-decoration: none;
+  color: #bbb;
+  width: 100%;
+  text-align: center;
+  display: block; /*Display as block so it can be dynamically sized*/
+  font-size: 0.8em;
+}
+
 /*No margin for headings*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
