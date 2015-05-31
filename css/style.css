@@ -48,9 +48,6 @@ img {
   font-weight: 400;
   color: #333; /*A dark gray */
   text-align: right;
-}
-
-.page-subtitle {
   text-transform: capitalize;
 }
 
