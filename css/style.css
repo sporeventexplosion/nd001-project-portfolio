@@ -38,10 +38,34 @@ img {
 
 /* Styling for the main icon */
 
+/* Spinning logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Webkit compatibility */
+@-webkit-keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header-logo {
   width: 4em; /*larger size*/
   float: left;
+  -webkit-animation: logo-spin 10s infinite linear;
+  animation: logo-spin 10s infinite linear;
 }
+
+
 
 
 .page-title, .page-subtitle {
@@ -142,7 +166,7 @@ img {
 
 .featured-item-heading {
   color: #777;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 400;
   text-align: center;
 }
@@ -222,6 +246,12 @@ img {
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 1099px) {
+  .featured-item-heading {
+    font-size: 0.8em;
+  }
+}
+
 @media screen and (min-width: 1100px) {
 
   .content {
@@ -268,6 +298,13 @@ img {
   }
 
 }
+
+@media screen and (max-width: 449px) {
+  .featured-item-heading {
+    font-size: 1.1em;
+  }
+}
+
 
 
 /*Clear the paddings of the featured items on both sides*/
