@@ -114,7 +114,6 @@ body {
 
 
 .featured-work-container {
-  margin: 0 -5px; /*Negative 5 pixels so the +5 pixels in the boxes make the edges line up*/
   display: flex;
   flex-wrap: wrap;
 
@@ -126,6 +125,8 @@ body {
   padding: 5px;
   box-sizing: border-box;
 }
+
+
 
 .featured-item-title {
   width: 100%;
@@ -185,7 +186,7 @@ body {
     width: 33.3333%;
   }
   .page-header {
-    border-bottom: 5px solid #bcbbbb;;
+    border-bottom: 4px solid #bcbbbb;;
   }
   .featured-item-link {
     font-size: 0.6em;
@@ -235,6 +236,10 @@ body {
   .color-square-caption {
     margin-left: -5px;
   }
+
+  .featured-item.offset-padding {
+    padding-left: 0;
+  } /*Quick fix for the left margin of the 1st featured item  */
 }
 
 /*No margin for headings*/
