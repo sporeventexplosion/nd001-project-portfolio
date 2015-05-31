@@ -260,6 +260,7 @@ body {
     flex-wrap: wrap;
     font-size: 0.7em;
     line-height: 1em;
+    color: #333;
   }
   .color-square-caption {
     margin-left: -5px;
