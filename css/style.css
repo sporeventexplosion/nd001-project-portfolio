@@ -68,7 +68,7 @@ img {
 .main-figure-hero {
   width: 100%;
   min-height: 200px;
-  background: url(/placeholder.png) center center;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/0/07/United_Airlines_777_N797UA_LAX.jpg) center center/cover;
   margin-bottom: 5px;
 }
 
