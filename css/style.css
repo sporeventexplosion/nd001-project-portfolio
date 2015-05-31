@@ -13,6 +13,10 @@ body {
 }
 
 
+img {
+  max-width: 100%;
+}
+
 /* Home wrapper styling. Uses flexbox. */
 
 .content {
