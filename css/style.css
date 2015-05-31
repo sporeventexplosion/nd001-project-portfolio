@@ -167,6 +167,25 @@ body {
 
 /* Responsive design section */
 
+@media screen and (max-width: 599px) { /*599 instead of 600 is to avoid merging issues with the bars at 600*/
+  /*Make sure items wrap when below 600 pixels*/
+
+  .featured-items-container {
+    flex-wrap: wrap;
+  }
+
+  .featured-item {
+    box-sizing: border-box;
+  }
+
+  .featured-item:nth-child(even) {
+    padding-right: 0;
+  }
+  .featured-item:nth-child(odd) {
+    padding-left: 0;
+  }
+}
+
 @media screen and (min-width: 450px) {
   body {
     font-size: 1.3em;
